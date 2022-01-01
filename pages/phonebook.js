@@ -1,6 +1,6 @@
 import { useState, useReducer, useEffect } from "react";
 
-const phonebook = () => {
+const Phonebook = () => {
 	const reducer = (state, action) => {
 		let new_state;
 		switch (action.type) {
@@ -129,4 +129,4 @@ const phonebook = () => {
 	);
 };
 
-export default phonebook;
+export default Phonebook;
