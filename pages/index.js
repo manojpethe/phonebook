@@ -17,7 +17,10 @@ export default function Home() {
 				</h1>
 
 				<div className={styles.grid}>
-					<a href="/Phonebook" className={styles.card}>
+					<a
+						href="https://phonebook-manojpethe.vercel.app/Phonebook"
+						className={styles.card}
+					>
 						<h2>Phonebook &rarr;</h2>
 						<p>very easy UseEffect and useRducer example for beginners</p>
 					</a>
