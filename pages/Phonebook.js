@@ -68,6 +68,7 @@ const Phonebook = () => {
 			<span>
 				<p />
 				<h1> Phonebook</h1>
+				<h2></h2>
 				<p />
 				<form onSubmit={handleSubmit}>
 					<input
@@ -125,7 +126,7 @@ const Phonebook = () => {
 						set_phone("");
 					}}
 				>
-					Save
+					Save <span style={{ fontFamily: "Wingdings" }}>&lt; </span>
 				</button>
 
 				<p />
@@ -139,7 +140,7 @@ const Phonebook = () => {
 									dispatch({ type: "del_entry", payload: { index } });
 								}}
 							>
-								Del
+								<span style={{ fontFamily: "Webdings" }}>r </span>
 							</button>
 						</p>
 					);
