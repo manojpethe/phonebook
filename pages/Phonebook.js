@@ -56,8 +56,12 @@ const Phonebook = () => {
 	return (
 		<div
 			style={{
-				backgroundColor: "gray",
-				height: 600,
+				backgroundColor: "green",
+				color: "white",
+				cursor: "grab",
+				borderRadius: "5px",
+				padding: "1px",
+				margin: "1px",
 				textAlign: "center",
 			}}
 		>
@@ -67,6 +71,12 @@ const Phonebook = () => {
 				<p />
 				<form onSubmit={handleSubmit}>
 					<input
+						style={{
+							fontSize: "20px",
+							width: "200px",
+							borderColor: "gray",
+							color: "green",
+						}}
 						type="text"
 						id="name"
 						key="name"
@@ -79,6 +89,12 @@ const Phonebook = () => {
 					/>
 					<p />
 					<input
+						style={{
+							fontSize: "20px",
+							width: "200px",
+							borderColor: "gray",
+							color: "green",
+						}}
 						type="text"
 						id="phone"
 						key="phone"
@@ -92,6 +108,13 @@ const Phonebook = () => {
 				</form>
 				<p />
 				<button
+					style={{
+						backgroundColor: "white",
+						borderRadius: "5px",
+						color: "green",
+						width: "120px",
+						fontSize: "20px",
+					}}
 					type="buton"
 					onClick={() => {
 						dispatch({
@@ -102,10 +125,7 @@ const Phonebook = () => {
 						set_phone("");
 					}}
 				>
-					Add
-				</button>
-				<button type="buton" onClick={handleSave}>
-					Save to Disk
+					Save
 				</button>
 
 				<p />
